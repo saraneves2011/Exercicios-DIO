@@ -15,24 +15,24 @@
                 <td><label for="sobrenome">Sobrenome</label></td>
             </tr>
             <tr>
-                <td><input type="text" id="name" name="name" placeholder="nome"></td>
-                <td> <input type="text" id="sobrenome" name="so" placeholder="Sobrenome"></td>
+                <td><input type="text" id="name" name="name" placeholder="nome" required="true"></td>
+                <td> <input type="text" id="sobrenome" name="so" placeholder="Sobrenome" required="true"></td>
             </tr>
             <tr>
                 <td><label for="email">Email</label></td>
                 <td><label for="dtNas">Data de Nascimento</label></td>
             </tr>
             <tr>
-                <td><input type="text" id="email" name="email" placeholder="email"></td>
-                <td><input type="date" name="dtNas" id="dtNas"></td>
+                <td><input type="text" id="email" name="email" placeholder="email" required="true"></td>
+                <td><input type="date" name="dtNas" id="dtNas" required="true"></td>
             </tr>
             <tr>
                 <td><label for="endereco">Endereço</label></td>
                 <td><label for="estado">Estado</label></td>
             </tr>
             <tr>
-                <td><input type="text" name="endereco" id="endereco" placeholder="endereço"></td>
-                <td><select name="estado" id="estado">
+                <td><input type="text" name="endereco" id="endereco" placeholder="endereço" required="true"></td>
+                <td><select name="estado" id="estado" required="true">
                     <option value="">Selecione</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
@@ -69,8 +69,19 @@
                 <td><label for="CEP">CEP</label></td>
             </tr>
             <tr>
-                <td><input type="text" id="Cidade" name="Cidade" placeholder="Cidade"></td>
-                <td><input type="number" nome="CEP" id="CEP" placeholder="CEP"></td>
+                <td><input type="text" id="Cidade" name="Cidade" placeholder="Cidade" required="true"></td>
+                <td><input type="number" nome="CEP" id="CEP" placeholder="CEP" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="descricao">Descrição</label></td>
+                <td><label for="Profissao">Profissão</label></td>
+            </tr>
+            <tr>
+                <td><textarea name="descricao" id="descricao" cols="20" rows="5" required="true"></textarea></td>
+                <td><input type="text" name="Profissao" id="Profissao" placeholder="Profissao" required="true"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="submit" name="submit" value="Enviar"></td>
             </tr>
         </table>
 
