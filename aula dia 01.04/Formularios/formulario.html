@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    <p><h4>Formulário de Cadastro</h4></p>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="nome">Nome</label></td>
+                <td><input type="text" style="margin-left: 30px;" id="nome" name="nome" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="sobrenome">Sobrenome</label></td>
+                <td><input type="text" style="margin-left: 30px;" id="sobrenome" name="sobrenome" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="enderec">Endereço</label></td>
+                <td><textarea name="enderec" style="margin-left: 30px;" id="enderec" rows="3" cols="21" required="true"></textarea></td>
+            </tr>
+            <td><label for="disciplinas">Disciplinas</label></td>
+            
+            <td>    
+            <input type="checkbox" style="margin-left: 30px;" id="prog" name="prog" value="progra">
+            <label for="prog"> Programação</label><br>
+            <input type="checkbox" style="margin-left: 30px;" id="lo" name="lo" value="logic">
+            <label for="lo"> Lógica</label><br>
+            <input type="checkbox" style="margin-left: 30px;" id="alg" name="alg" value="algorit">
+            <label for="alg"> Algoritmo</label><br>            
+            <input type="checkbox" style="margin-left: 30px;" id="bd" name="bd" value="bancoD">
+            <label for="bd"> Banco de Dados</label><br>
+            <input type="checkbox" style="margin-left: 30px;" id="mb" name="mb" value="mobile">
+            <label for="mb"> Mobile</label><br></td>
+
+            <tr><td><label for="gen">Gênero</label></td>
+            
+            <td>
+            <input type="radio" style="margin-left: 30px;" id="fem" name="fav_language" value="femi">
+            <label for="fem">Feminino</label>
+            <input type="radio" id="mas" name="fav_language" value="masc">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="ni" name="fav_language" value="ni">
+                <label for="id">Não informar</label>
+        </td>
+            
+        <tr>
+            <td><label for="ida">Idade</label></td>
+            <td><select name="ida" style="margin-left: 30px;" id="ida" required="true">
+                <option value="">0</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td><label for="ft">Foto de Perfil</label></td>
+           <td><input type="file" style="margin-left: 30px;" name="ft" id="ft"></td>
+        </tr>
+        <td><input type="submit"  value="Cadastrar"></td>
+        <td><input type="reset" value="Limpar"></td>
+        </table>
+    </form>
+</body>
+</html>
