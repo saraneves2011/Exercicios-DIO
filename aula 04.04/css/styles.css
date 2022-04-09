@@ -1,0 +1,25 @@
+body{ background-color: aquamarine}
+.p{
+    color:chocolate;
+    background-color:yellow;
+    font-size:20px
+}
+
+.h1{
+    color:chocolate;
+    border: 4px double black
+}
+
+.p1{
+    color:blue
+}
+
+.p3{
+    color:green;
+    background-color: pink;
+    font-size: 20px;
+}
+.p4{
+    color:rgb(105, 78, 45);;
+    background-color: white
+}
