@@ -32,3 +32,8 @@
 - [Testando CSS Página 1](./aula04.04/html/page1.html)
 - [Testando CSS Página 2](./aula04.04/html/page2.html)
 - [[Arquivo CSS](./aula04.04/css/styles.css)
+
+# Páginas aula 22 seletores com HTML e CSS
+
+- [Exemplo de seletores](./Aula22/paginas/pagina1.html)
+- [Página de formulario](./Aula22/paginas/formulario.html)
