@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 50%;
+            height: 550px;
+            background-color: pink;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid yellow;
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+        }
+        label {
+            color: rgb(163, 86, 24);
+            font-size: 17px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .dados{
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid rgb(221, 187, 193);
+            box-sizing: border-box;
+        }
+        .dados:hover{
+            background-color: aliceblue;
+        }
+
+        #buton{
+            background-color: rgb(238, 107, 107);
+            color:aliceblue;
+            border:none;
+            padding:15px 20px;
+            margin:4px 2px;
+            cursor: pointer;
+        }
+        #buton:hover{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" class="dados">
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" name="sob" id="sob" class="dados">
+
+        <label for="data">Data</label>
+        <input type="date" name="data" id="data" class="dados">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="dados">
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" class="dados">
+
+        <label for="cons">Cofirmar Senha</label>
+        <input type="password" name="cons" id="cons" class="dados">
+
+        <input type="submit" id="buton" name="confirmar" value="Confirmar" class="dados" onclick="getData()"> 
+    </form>
+</div>
+</body>
+<script>
+    function getData() {
+        var nome = document.getElementById("nome").value;
+        var sobrenome = document.getElementById("sob").value;
+        var data = document.getElementById("data").value;
+        var email = document.getElementById("email").value;
+        var senha = document.getElementById("senha").value;
+        var cons = document.getElementById("cons").value;
+        alert("Nome: " + nome +"\nSobrenome: " + sobrenome + "\nData Nasscimento: " + data + "\nEmail: " + email + "\nSenha: " + senha + "\nConfirmar Senha: " +cons);
+    }
+</script>
+</html>

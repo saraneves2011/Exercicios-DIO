@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com estilo baseado em seletores</title>
+    <style>
+        /* baseado em seletores de elementos*/
+        div{
+            width: 200px;
+            height: 100px;
+            background-color:rgb(248, 140, 158);
+            margin: 5px;
+            border: 1px solid rgb(119, 99, 11)
+        }
+        
+        /* baseados em seletores de atributos com agrupamento*/
+        p[name="par3"],[name="par2"]{
+            color: rgb(219, 131, 16);
+        }
+        .dimensao{
+            width: 400px;
+            height: 200px;
+        }
+        .colorido{
+            background-color: rgb(235, 206, 143);
+        }
+
+        /* Baseado em seletores de pseudo-classes */
+
+        input:hover{
+            background-color: dodgerblue;
+            width: 100px;    
+        }
+        #id:hover{
+            background-color: gray;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="id">
+        <p>Testando seletores</p>
+    </div>
+
+    <div>
+        <p name="par2">Testando seletores 1</p>
+    </div>
+    <div class="dimensao colorido">
+        <p name="par3" >conteudo na terceira div</p>
+    </div>
+    <input type="submit" value="Enviar">
+</body>
+</html>
